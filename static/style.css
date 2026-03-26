@@ -103,3 +103,35 @@ a {
 a:hover {
     color: #4B2E2B;
 }
+/* Form box color improvement */
+.form-container {
+    background: #F3E4D7;   /* soft matching beige */
+    border: 1px solid #C08552;
+}
+
+/* Heading underline */
+h1 {
+    color: #4B2E2B;
+    border-bottom: 3px solid #C08552;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+/* Form row layout */
+form {
+    text-align: left;
+}
+
+/* Each label + input in one line */
+form label {
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+    color: #4B2E2B;
+}
+
+form input {
+    display: inline-block;
+    width: 70%;
+    padding: 8px;
+    margin: 10px 0;
+}
