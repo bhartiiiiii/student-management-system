@@ -4,14 +4,17 @@ import mysql.connector
 
 app = Flask(__name__)
 
-# Database connection (Railway)
+# ✅ Database connection using DATABASE_URL
+url = urlparse(os.getenv("DATABASE_URL"))
+
 conn = mysql.connector.connect(
-    host=os.getenv("MYSQLHOST"),
-    user=os.getenv("MYSQLUSER"),
-    password=os.getenv("MYSQLPASSWORD"),
-    database=os.getenv("MYSQLDATABASE"),
-    port=int(os.getenv("MYSQLPORT"))
+    host=url.hostname,
+    user=url.username,
+    password=url.password,
+    database=url.path[1:],   # remove '/'
+    port=url.port
 )
+
 cursor = conn.cursor(buffered=True)
 
 @app.route('/')
