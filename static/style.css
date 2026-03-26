@@ -1,23 +1,58 @@
-
 body {
-    background-color: #FFF8F0;
     font-family: Arial, sans-serif;
-    color: #4B2E2B;
+    background-color: #FFF8F0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
 }
 
 /* Heading */
-h2 {
-    text-align: center;
+h1 {
     color: #4B2E2B;
+}
+
+/* Form section */
+.form-container {
+    margin: 30px auto;
+    padding: 20px;
+    width: 40%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+input {
+    padding: 8px;
+    margin: 10px;
+    width: 80%;
+}
+
+/* Button */
+button {
+    background-color: #8C5A3C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4B2E2B;
 }
 
 /* Table */
 table {
     width: 80%;
-    margin: auto;
+    margin: 30px auto;
     border-collapse: collapse;
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 th {
@@ -29,41 +64,42 @@ th {
 td {
     padding: 10px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
+}
+h2 {
+    color: #4B2E2B;
+    margin-top: 40px;
 }
 
-/* Alternate rows */
-tr:nth-child(even) {
-    background-color: #f9f1e7;
+/* Labels spacing */
+form {
+    text-align: left;
 }
 
-/* Buttons */
-button {
-    background-color: #8C5A3C;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 5px;
+/* Better input alignment */
+form input {
+    display: block;
+    margin: 10px auto;
 }
 
-button:hover {
-    background-color: #4B2E2B;
+/* Button center */
+form button {
+    display: block;
+    margin: 15px auto;
 }
 
-/* Links (edit/delete) */
+/* Table spacing */
+table {
+    margin-top: 40px;
+}
+
+/* Links styling */
 a {
     text-decoration: none;
-    padding: 6px 10px;
-    border-radius: 4px;
+    color: #8C5A3C;
+    font-weight: bold;
 }
 
-a.edit {
-    background-color: #C08552;
-    color: white;
-}
-
-a.delete {
-    background-color: #4B2E2B;
-    color: white;
+a:hover {
+    color: #4B2E2B;
 }
